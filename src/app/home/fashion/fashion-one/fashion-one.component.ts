@@ -32,7 +32,7 @@ export class FashionOneComponent implements OnInit {
   public sliders = [{
     title: 'welcome to fashion',
     subTitle: 'Men fashion',
-    image: 'assets/images/slider/1.jpg'
+    image: 'assets/images/slider/Tommy-Hilfiger-Logo-PNG8.png'
   }, {
     title: 'welcome to fashion',
     subTitle: 'Women fashion',

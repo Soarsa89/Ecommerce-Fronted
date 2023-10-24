@@ -30,13 +30,13 @@ export class FashionThreeComponent implements OnInit, OnDestroy {
   public ProductSliderConfig: any = ProductSlider;
 
   public sliders = [{
-    title: 'welcome to fashion',
-    subTitle: 'Men fashion',
-    image: 'assets/images/slider/5.jpg'
+    title: '',
+    subTitle: '',
+    image: 'assets/images/slider/5t.jpg'
   }, {
-    title: 'welcome to fashion',
-    subTitle: 'Women fashion',
-    image: 'assets/images/slider/6.jpg'
+    title: '',
+    subTitle: '',
+    image: 'assets/images/slider/6t.jpg'
   }];
 
   ngOnInit(): void {

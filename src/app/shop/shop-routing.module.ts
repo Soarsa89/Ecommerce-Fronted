@@ -81,9 +81,13 @@ const routes: Routes = [
     component: CollectionRightSidebarComponent
   },
   {
-    path: 'collection/no/sidebar',
+    path: 'collection/general',
     component: CollectionNoSidebarComponent
   },
+  // {
+  //   path: 'collection/no/sidebar',
+  //   component: CollectionNoSidebarComponent
+  // },
   {
     path: 'collection/infinitescroll',
     component: CollectionInfinitescrollComponent
