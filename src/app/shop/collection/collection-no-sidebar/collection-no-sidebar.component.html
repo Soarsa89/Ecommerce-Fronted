@@ -1,4 +1,4 @@
-<app-breadcrumb [title]="'Collection'" [breadcrumb]="'Collection'"></app-breadcrumb>
+<app-breadcrumb [title]="'Catálogo'" [breadcrumb]="'Catálogo'"></app-breadcrumb>
 <!-- section start -->
 <section class="section-b-space">
     <div class="collection-wrapper">
@@ -9,9 +9,9 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="top-banner-wrapper">
-                                    <a [routerLink]="['/shop/collection/left/sidebar']">
-                                        <img src="assets/images/colletion-banner.jpg" class="img-fluid " alt="">
-                                    </a>
+                                    <!-- <a [routerLink]="['/shop/collection/left/sidebar']">
+                                        <img height="200" src="assets/images/colletion-banner.jpg" class="img-fluid " alt="">
+                                    </a> -->
                                     <!-- <div class="top-banner-content small-section">
                                         <h4>fashion</h4>
                                         <h5>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -30,7 +30,7 @@
                                     </div> -->
                                 </div>
                                 <div class="collection-product-wrapper" id="products">
-                                    <app-grid 
+                                    <app-grid
                                         [products]="products"
                                         [paginate]="paginate"
                                         [layoutView]="layoutView"
@@ -45,8 +45,8 @@
                                                 [ngClass]="grid"
                                                 *ngFor="let product of products">
                                                 <div class="product-box">
-                                                    <app-product-box-one 
-                                                        [product]="product" 
+                                                    <app-product-box-one
+                                                        [product]="product"
                                                         [currency]="productService?.Currency"
                                                         [thumbnail]="false"
                                                         [cartModal]="true"

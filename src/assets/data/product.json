@@ -1,0 +1,53 @@
+[
+    {
+        "id": 106,
+        "title": "Boxer niño ",
+        "description": "Boxer",
+        "brand": "American Eagle",
+        "category": "60",
+        "priceSale": 9000,
+        "sale": true,
+        "stock": 1,
+        "new": false,
+        "variants": [
+            {
+                "variantId": 15,
+                "sku": "1",
+                "size": "m",
+                "color": "green",
+                "itemId": 106
+            },
+            {
+                "variantId": 16,
+                "sku": "2",
+                "size": "m",
+                "color": "green",
+                "itemId": 106
+            },
+            {
+                "variantId": 17,
+                "sku": "3",
+                "size": "m",
+                "color": "green",
+                "itemId": 106
+            }
+        ],
+        "images": [
+            {
+                "itemId": 106,
+                "alt": "1",
+                "src": "https://woapp-test.s3.amazonaws.com/5/Inventory/Product/106/1.png"
+            },
+            {
+                "itemId": 106,
+                "alt": "3",
+                "src": "https://woapp-test.s3.amazonaws.com/5/Inventory/Product/106/3.png"
+            },
+            {
+                "itemId": 106,
+                "alt": "2",
+                "src": "https://woapp-test.s3.amazonaws.com/5/Inventory/Product/106/2.png"
+            }
+        ]
+    }
+]

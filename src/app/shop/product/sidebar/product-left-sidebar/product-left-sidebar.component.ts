@@ -30,7 +30,7 @@ export class ProductLeftSidebarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log("dddd", this.product)
+   
   }
 
   // Get Product Color

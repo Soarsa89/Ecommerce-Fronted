@@ -30,6 +30,7 @@ export class CollectionNoSidebarComponent implements OnInit {
         this.productService.getProducts.subscribe(response => {         
           // Sorting Filter
           this.products = this.productService.sortProducts(response, this.sortBy);
+          console.log(this.products)
           // Paginate Products
           this.paginate = this.productService.getPager(this.products.length, +this.pageNo);     // get paginate object from service
           this.products = this.products.slice(this.paginate.startIndex, this.paginate.endIndex + 1); // get current page of items

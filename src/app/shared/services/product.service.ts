@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map, startWith, delay } from 'rxjs/operators';
 import { ToastrService } from 'ngx-toastr';
 import { Product } from '../classes/product';
+import { environment } from 'src/environments/environment';
 
 const state = {
   products: JSON.parse(localStorage['products'] || '[]'),
@@ -17,12 +18,13 @@ const state = {
 })
 export class ProductService {
 
-  public Currency = { name: 'Dollar', currency: 'USD', price: 1 } // Default Currency
+  public Currency = { name: 'Colon', currency: '₡ ', price: 1 } // Default Currency
   public OpenCart: boolean = false;
   public Products
+  public urlApi:any;
 
   constructor(private http: HttpClient,
-    private toastrService: ToastrService) { }
+    private toastrService: ToastrService) { this.urlApi = environment.urlApi;}
 
   /*
     ---------------------------------------------
@@ -32,7 +34,13 @@ export class ProductService {
 
   // Product
   private get products(): Observable<Product[]> {
-    this.Products = this.http.get<Product[]>('assets/data/products.json').pipe(map(data => data));
+    let headers = new HttpHeaders().set('IdCompany', '5');
+
+   // this.Products = this.http.get<Product[]>('assets/data/product.json').pipe(map(data => data));
+
+    this.Products = this.http.get<Product[]>(this.urlApi + 'item/GetItemsWithImages/5',{headers:headers}).pipe(
+      map(data => data)
+      );
     this.Products.subscribe(next => { localStorage['products'] = JSON.stringify(next) });
     return this.Products = this.Products.pipe(startWith(JSON.parse(localStorage['products'] || '[]')));
   }

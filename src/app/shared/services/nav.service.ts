@@ -39,9 +39,7 @@ export class NavService {
 			title: 'home', type: 'link', active: false
 		},
 		{
-			title: 'Coleccion', type: 'sub', active: false, children: [				
-				{ path: '/shop/collection/general', title: 'General', type: 'link' },
-			]
+			title: 'CATALAGO',  active: true, path: '/shop/collection/general' , type: 'link'
 		},
 
 
@@ -186,9 +184,7 @@ export class NavService {
 
 	LEFTMENUITEMS: Menu[] = [
 		{
-			title: 'Coleccion', type: 'sub', active: false, children: [				
-				{ path: '/shop/collection/general', title: 'General', type: 'link' },
-			]
+			title: 'CATALAGO',  active: true, path: '/shop/collection/general' , type: 'link'
 		},
 		
 		// {
